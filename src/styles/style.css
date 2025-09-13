@@ -1,0 +1,86 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff9ec4, #6ec1e4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container central */
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 50px 16px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    max-width: 300px;
+}
+
+/* Logo */
+.logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+/* Título */
+h1 {
+    color: #ff4081; /* rosa */
+    margin-bottom: 20px;
+}
+
+/* Texto */
+p {
+    color: #4c4c4c; /* azul */
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 30px;
+}
+
+/* Botão padrão */
+a.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* espaço entre ícone e texto */
+    padding: 15px 40px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: transform 0.2s, background 0.3s;
+}
+
+/* Botão WhatsApp */
+a.button.whatsapp {
+    background-color: #25D366; /* verde WhatsApp */
+}
+
+a.button.whatsapp .image-container{
+  max-width: 30px;
+}
+
+a.button.whatsapp .image-container img{
+  width: 100%;
+}
+
+a.button.whatsapp:hover {
+    background-color: #1ebe57;
+    transform: scale(1.05);
+}
+
+/* Ícone do WhatsApp */
+a.button i {
+    font-size: 22px;
+}
